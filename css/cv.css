@@ -78,7 +78,6 @@ footer address {
 
 
 /* resume.html */
-.resume {}
 .resume .sec01 {
   display: flex;
   align-items: center;
@@ -169,6 +168,9 @@ footer address {
   .resume .sec01,
   .resume .sec02 {
     flex-direction: column;
+  }
+  .resume .sec01 .img_wrap {
+    width: 60%;
   }
   .resume .sec02 dl {
     margin-bottom: 20px;

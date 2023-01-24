@@ -109,11 +109,12 @@ section .sec_tit {
 .sec03 ul:nth-child(even) {
   animation-direction: reverse;
 }
-.sec03 ul li {}
 
 /* sec04 _ my works */
 .sec04 {
+  overflow: hidden;
   position: relative;
+  width: 100vw;
 }
 .sec04 .sec_tit {
   margin-left: 6%;
@@ -314,8 +315,9 @@ footer {
     width: 8px;
     height: 13px;
   }
-  .sec04 .btn_wrap .work_right {
-    margin-left: 10px;
+  .sec04 .btn_wrap .work_left {
+    position: relative;
+    right: 10px;
   }
   /* sec05 _ resolution */
   .sec05 {
