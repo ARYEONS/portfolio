@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* 공통 */
+.tit {
+  width: 95%;
+  max-width: 960px;
+  margin: 20px auto;
+  font-size: 1.5rem;
+}
+section {
+  width: 95%;
+  max-width: 960px;
+  margin: 50px auto;
+}
+footer address {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* career.html */
+.career .sec_tit {
+  margin-bottom: 20px;
+}
+.career .period {
+  margin-top: 8px;
+}
+.career .primaty_duty,
+.career .project_tit {
+  margin: 30px 0 15px;
+  padding-left: 10px;
+  font-size: 1.25rem;
+}
+.career .primaty_duty strong::before,
+.career .project_tit strong::before {
+  content: '・';
+  position: relative;
+  left: -10px;
+}
+.career .list_tit {
+  margin: 20px 0 13px;
+  font-size: 1.15rem;
+}
+.career ul li {
+  margin: 8px 0;
+  text-indent: 35px;
+}
+.career ul li::before {
+  content: '-';
+  position: relative;
+  left: -10px;
+}
+.career ul li ul li {
+  text-indent: 50px;
+}
+.career ul li ul li::before {
+  content: '・';
+  left: -10px;
+}
+.career ul li small {
+  display: block;
+  margin: 8px 0 0 5px;
+}
+.career .project .period {
+  margin-bottom: 13px;
+}
+.career .project div div p {
+  text-indent: 25px;
+}
+.career .project div div.participants p:nth-of-type(2) {
+  margin: 8px 0 13px;
+}
+.career .project div div.participants p:nth-of-type(2)::before {
+  content: '-';
+  position: relative;
+  left: -10px;
+  margin-left: 10px;
+}
+
+
+/* resume.html */
+.resume {}
+.resume .sec01 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.resume .sec01 .text_wrap p {
+  text-align: justify;
+  line-height: 1.6;
+}
+.resume .sec02 {
+  display: flex;
+  justify-content: space-between;
+}
+.resume .sec02 dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.resume .sec02 dt:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.resume .sec03 table,
+.resume .sec03 tbody {
+  display: block;
+}
+.resume .sec03 tr {
+  display: flex;
+}
+.resume .sec03 tr:first-child {
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 10px; 
+  border-bottom: 1px solid #ccc;
+}
+.resume .sec03 tbody tr:not(:first-child) {
+  position: relative; 
+  padding-left: 10px; 
+  margin-top: 15px;
+}
+.resume .sec03 tr:not(:first-child)::before {
+  content: '・'; 
+  position: relative;
+  left: -10px;
+}
+.resume .sec03 tr:not(:first-child) td:first-child {
+  margin-right: 30px;
+}
+.resume .sec03 tbody.work tr:not(:first-child) {
+  display: block;
+}
+.resume .sec03 tbody.work tr:not(:first-child) td:first-child {
+  display: inline-block;
+}
+.resume .sec03 tbody.work tr:not(:first-child) td:not(:first-child) {
+  display: block;
+  margin: 8px 0 0 8px;
+}
+.resume .sec03 tbody.work .link {
+  position: relative;
+  padding-right: 20px;
+}
+.resume .sec03 tbody.work .link a::after {
+  content: '>';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* pc */
+@media screen and (min-width: 961px){
+  section .sec_tit {
+    font-size: 1.5rem;
+  }
+  .resume .sec03 table,
+  .resume .sec03 tbody {
+    margin-top: 100px;
+  }
+  .resume .sec03 tr:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 960px){
+  section .sec_tit {
+    font-size: 1.25rem;
+  }
+  .resume .sec01,
+  .resume .sec02 {
+    flex-direction: column;
+  }
+  .resume .sec02 dl {
+    margin-bottom: 20px;
+  }
+  .resume .sec03 table,
+  .resume .sec03 tbody {
+    margin-top: 50px;
+  }
+  .resume .sec03 tr:first-child {
+    margin-bottom: 20px;
+  }
+  .resume .sec03 tr:not(:first-child) {
+    display: block;
+  }
+  .resume .sec03 tr:not(:first-child) td:first-child {
+    display: inline-block;
+  }
+  .resume .sec03 tr:not(:first-child) td:not(:first-child) {
+    display: block;
+    margin: 8px 0 0 8px;
+  }
+}
