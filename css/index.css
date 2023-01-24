@@ -118,6 +118,21 @@ section .sec_tit {
 .sec04 .sec_tit {
   margin-left: 6%;
 }
+.sec04 .slick_slide_wrap {
+  position: relative;
+  left: 6%;
+}
+.sec04 ul li {
+  opacity: 0.7;
+}
+.sec04 ul li.slick-current {
+  opacity: 1; 
+  transition: all 0.5s;
+}
+.sec04 ul li.slick-current img {
+  margin: 0;
+  transition: all 0.5s;
+}
 .sec04 ul li .text_wrap strong {
   display: block;
 }
@@ -128,15 +143,12 @@ section .sec_tit {
   position: absolute;
   right: 6%;
 }
-.sec04 .swiper-button-next, 
-.sec04 .swiper-button-prev {
-  width: inherit;
-  height: inherit;
-  margin-top: inherit;
-  color: #333;
+.sec04 .btn_wrap button {
+  text-indent: -9999px; 
+  background: url(../img/chevron.png) no-repeat left/cover;
 }
-.sec04 .swiper-button-next {
-  right: 0;
+.sec04 .btn_wrap .work_right {
+  background-position: right 0;
 }
 
 /* sec05 _ resolution */
@@ -194,6 +206,17 @@ footer {
     font-size: 120px;
   }
   /* sec04 _ my works */
+  .sec04 ul li:not(:last-child) {
+    margin-right: 50px;
+  }
+  .sec04 ul li img {
+    width: 550px; 
+    height: 300px; 
+    margin: 15px 0;
+  }
+  .sec04 ul li.slick-current img {
+    height: 330px;
+  }
   .sec04 ul li .text_wrap {
     padding: 20px 20px 0 20px;
   }
@@ -204,12 +227,12 @@ footer {
   .sec04 .btn_wrap {
     top: 24px;
   }
-  .sec04 .swiper-button-prev {
-    left: -56px;
+  .sec04 .btn_wrap button {
+    width: 13px; 
+    height: 23px;
   }
-  .sec04 .swiper-button-next:after, 
-  .sec04 .swiper-button-prev:after {
-    font-size: 26px;
+  .sec04 .btn_wrap .work_right {
+    margin-left: 30px;
   }
   /* sec05 _ resolution */
   .sec05 {
@@ -267,6 +290,17 @@ footer {
     font-size: 60px;
   }
   /* sec04 _ my works */
+  .sec04 ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  .sec04 ul li img {
+    width: 280px; 
+    height: 148px; 
+    margin: 10px 0;
+  }
+  .sec04 ul li.slick-current img {
+    height: 168px;
+  }
   .sec04 ul li .text_wrap {
     padding: 8px 8px 0 8px;
   }
@@ -276,16 +310,19 @@ footer {
   .sec04 .btn_wrap {
     top: 6px;
   }
-  .sec04 .swiper-button-prev {
-    left: -30px;
+  .sec04 .btn_wrap button {
+    width: 8px;
+    height: 13px;
   }
-  .sec04 .swiper-button-next:after, 
-  .sec04 .swiper-button-prev:after {
-    font-size: 14px;
+  .sec04 .btn_wrap .work_right {
+    margin-left: 10px;
   }
   /* sec05 _ resolution */
   .sec05 {
     padding: 0 6% 50px;
+  }
+  .sec05 p {
+    line-height: 1.6;
   }
 
   footer {

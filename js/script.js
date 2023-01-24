@@ -1,15 +1,24 @@
-var swiper = new Swiper(".work_swiper", {
-  slidesPerView: 2.5,
-  spaceBetween: 50,
-  centeredSlides: true,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 0,
-    depth: 100,
-    slideShadows: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  }
-});
+$(function(){
+  $('.slick_slide').slick({
+    slidesToShow: 1,
+    infinite: false,
+    draggable:true,
+    accessibility: true,
+    focusOnSelect: true,
+    variableWidth: true,
+    cssEase: 'linear',
+    arrow: true,
+    prevArrow : $('.work_left'),
+    nextArrow : $('.work_right'),
+    responsive: [ 
+        {  
+            breakpoint: 960, 
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            } 
+        }
+    ]
+  });
+}); 
