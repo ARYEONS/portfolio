@@ -149,6 +149,8 @@ section .sec_tit {
   background: url(../img/chevron.png) no-repeat left/cover;
 }
 .sec04 .btn_wrap .work_right {
+  position: absolute;
+  right: 0;
   background-position: right 0;
 }
 
@@ -227,13 +229,11 @@ footer {
   }
   .sec04 .btn_wrap {
     top: 24px;
+    width: 56px;
   }
   .sec04 .btn_wrap button {
     width: 13px; 
     height: 23px;
-  }
-  .sec04 .btn_wrap .work_right {
-    margin-left: 30px;
   }
   /* sec05 _ resolution */
   .sec05 {
@@ -310,14 +310,11 @@ footer {
   }
   .sec04 .btn_wrap {
     top: 6px;
+    width: 26px;
   }
   .sec04 .btn_wrap button {
     width: 8px;
     height: 13px;
-  }
-  .sec04 .btn_wrap .work_left {
-    position: relative;
-    right: 10px;
   }
   /* sec05 _ resolution */
   .sec05 {
