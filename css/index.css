@@ -19,6 +19,19 @@ section {
 section .sec_tit {
   font-family: 'Nanum Myeongjo', serif;
 }
+.out_link a::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background: url(../img/outlink_B.png) no-repeat center/contain;
+}
+.out_link a:hover::after {
+  background-image: url(../img/outlink_Y.png);
+}
 
 /* sec01 _ main */
 .sec01 {
@@ -81,19 +94,6 @@ section .sec_tit {
 .sec02 .cont .text_wrap .out_link {
   display: flex;
   gap: 50px;
-}
-.sec02 .cont .text_wrap .out_link a::after {
-  content: '';
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  width: 15px;
-  height: 15px;
-  margin-left: 10px;
-  background: url(../img/outlink_B.png) no-repeat center/contain;
-}
-.sec02 .cont .text_wrap .out_link a:hover::after {
-  background-image: url(../img/outlink_Y.png);
 }
 
 /* sec03 _  skill */
